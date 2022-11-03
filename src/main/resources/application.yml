@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://124.222.91.156:3306/spring_jpa?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: spring_jpa
+    password: 4053b7b3d0
+    driver-class-name: com.mysql.jdbc.Driver
