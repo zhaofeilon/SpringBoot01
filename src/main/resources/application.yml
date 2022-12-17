@@ -4,3 +4,5 @@ spring:
     username: spring_jpa
     password: 4053b7b3d0
     driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
