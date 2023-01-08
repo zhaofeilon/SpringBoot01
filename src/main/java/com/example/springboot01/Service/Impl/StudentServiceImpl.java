@@ -18,4 +18,9 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> findAll() {
         return studentMapper.findAll();
     }
+
+    @Override
+    public List<Student> findAllByS(Student student) {
+        return studentMapper.findAllByS(student);
+    }
 }

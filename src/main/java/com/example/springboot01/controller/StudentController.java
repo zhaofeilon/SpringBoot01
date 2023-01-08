@@ -25,4 +25,17 @@ public class StudentController {
 
         return all;
     }
+
+    @GetMapping("/findAll2")
+    public List<Student> findAll2(){
+        Student student = new Student();
+        student.setName("小兰");
+        List<Student> all = studentService.findAllByS(student);
+        for (Student s: all
+        ) {
+            System.out.println(s.toString());
+        }
+
+        return all;
+    }
 }

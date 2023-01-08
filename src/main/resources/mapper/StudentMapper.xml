@@ -14,8 +14,18 @@
     <select id="findAll" resultMap="BaseResultMap">
         SELECT * FROM student;
     </select>
+    <select id="findAllByS" resultType="com.example.springboot01.entity.Student">
+        select * from student
+        where 1=1
+        <if test="id != null and '' != id">
+            and id =#{id}
+        </if>
+        <if test=" name != null and '' != name">
+            and name =#{name}
+        </if>
+    </select>
 
-<!--    <insert id="insert" parameterType="com.example.springboot01.entity.Student">-->
+    <!--    <insert id="insert" parameterType="com.example.springboot01.entity.Student">-->
 <!--        INSERT INTO student (name,score,age,gender) VALUES (#{name},#{score},#{age},#{gender});-->
 <!--    </insert>-->
 
